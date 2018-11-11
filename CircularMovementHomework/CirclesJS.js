@@ -7,11 +7,15 @@ document.body.appendChild(button);
 let bigCircle = document.createElement('div');
 document.body.appendChild(bigCircle);
 bigCircle.setAttribute("class",'bigCircle');
+let bigstyle = getComputedStyle(bigCircle);
+//alert(bigstyle.height);
 
 let smallCircle = document.createElement('div');
 bigCircle.appendChild(smallCircle);
 smallCircle.setAttribute("ID",'smallID');
 smallCircle.setAttribute("class",'smallCircle');
+let smallstyle = getComputedStyle(smallCircle);
+//alert(smallstyle.height);
 
 let button1 = document.createElement("button");
 button1.className = "but1";
@@ -22,6 +26,16 @@ smallCircle.style.top = "-25px";
 smallCircle.style.left = "75px";
 
 //functionality
+
+function checkonLoad()
+{
+   if ((smallstyle.height !== smallstyle.width) || bigstyle.height !== bigstyle.width){
+         alert("This is not a Circle, not what we need!");
+    }
+}
+
+checkonLoad();
+
 
 let t = 3/2 * Math.PI; //this variable is for not jumping at the first time
 let count = 0; //this is for buttons functionality
@@ -54,10 +68,3 @@ function moveCircular(){
 function stopmove(){
    clearTimeout(timeout); //stops the setTimeout function
 }
-
-
-
-
-
-
-
