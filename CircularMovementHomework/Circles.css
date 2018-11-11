@@ -1,0 +1,54 @@
+* {
+  background-color: #90A4AE;
+}
+.bigCircle{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  margin-left: 42%;
+  margin-top: 50px;
+  border-radius: 100%;
+  border: 5px solid #5C6BC0;
+  background-color: #7986CB;
+  box-shadow: 20px 20px  100px #BBDEFB;
+  
+}
+.smallCircle{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 100%;
+  background-color: #90CAF9;
+  border: 5px solid #64B5F6;
+  top: -25px;
+  left: 75px; 
+}
+.but1 {
+  margin-left: 45%;
+  margin-top: 80px; 
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px #BBDEFB;
+  border: none;
+  background-color: #FFAB91;
+  color: #455A64;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.but {
+  margin-left: 45%;
+  margin-top: 50px;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px #BBDEFB;
+  border: none;
+  background-color: #FFAB91;
+  color: #455A64;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
